@@ -81,7 +81,6 @@ body {
     border-radius: 50%;
 }
 .preferences{
-    /* width: 90%; */
     border: 1px solid rgb(247, 247, 247) ;
     background-color: rgb(247, 247, 247);
     border-radius: 60px;
@@ -89,7 +88,6 @@ body {
     position: fixed;
     top: 90px;
     left: 25%;
-
 }
 .flex{
     display: flex;
@@ -108,6 +106,41 @@ body {
     background-color: red;
     padding: 14px;
     border-radius: 50%;
+}
+
+/* Responsive */
+
+@media (max-width:1015px){
+
+    .logo{
+        margin-left: 30px;
+    }
+    .view_div{
+        display: none;
+    }
+    .login p{
+        display: none;
+    }
+    .flex{
+        display: none;
+    }
+    .login_div{
+        position: fixed;
+        right: 30px;
+        top: 20px;
+    }
+    .praveen{
+        background-color:white;
+        width: 100%;
+        height: 100px;
+        top: 170px;
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 16px;
+    }
 }
 
 /* categories */
@@ -161,7 +194,7 @@ body {
     text-align: center;
     justify-content: center;
     gap: 5px;
-    width: 65%;
+    width: 90%;
     left: 5%;
     position: fixed;
     background-color:white;
